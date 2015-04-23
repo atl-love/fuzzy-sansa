@@ -107,10 +107,16 @@
 
       
       <div class="jumbotron">
-        <div id="chatwindow">
+      <h3 align="center">Chat Room</h3>
+        <div name = "chat" align="center">
+        <iframe id="chatwindow" width="500" height="700" frameBorder="0" align="center" src=""></iframe> 
         </div>
-
+        <div name = "videoButton" align="center">
         <button type="button" class="btn btn-info btn-lg" onclick="myFunction()">Click here to start Video</button>
+        </div>
+      </div>
+
+        
        
       </div>
 
@@ -175,7 +181,15 @@
     <!-- Custom js-->
     <script src="js/custom.js"></script>
 
-    <script type="text/javascript"></script>
+    <script type="text/javascript">
+
+        function myFunction() {
+
+            document.getElementById('chatwindow').src = "http://webrtcsignaling.elasticbeanstalk.com/";
+           
+        }
+
+    </script>
 
 
     <!-- Bootstrap core JavaScript
